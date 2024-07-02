@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('horror.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    height: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    margin: auto; 
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.8); 
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px; 
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}

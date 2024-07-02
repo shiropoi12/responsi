@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perkenalan Diri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="navi">
+        <div class="profil">
+            <img src="images12.jpeg" alt="Profil">
+            <a href="#">Fauzan Fajar Fathona</a>
+        </div>
+        <div class="capt">Welcome to my page</div>
+    </header>
+
+    <div class="container">
+        <section class="konten">
+            <br><br><br>
+            <h1>Selamat Datang!</h1>
+            <p>Nama saya Fauzan Fajar Fathona.<br>
+                di bawah ini konten buku yang dapat anda pilih
+            </p>
+        </section>
+
+        <nav class="menu-container">
+            <ul class="menu">
+                <li><a href="responsi.html">romance</a></li>
+                <li><a href="responsi2.html">horror</a></li>
+                <li><a href="responsi3.html">slice of life</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="border">
+        <p>ini merupakan hak cipta saya</p>
+    </div>
+    <button id="toggleDarkMode" class="dark-mode-button">ganti warna</button>
+
+    <script>
+        window.onload = function() {
+            alert("Welcome to my page, Fauzan Fajar Fathona!");
+        };
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.getElementById('toggleDarkMode').addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+    <style>
+        .dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .dark-mode .navi, .dark-mode .border {
+            background-color: #333333;
+        }
+
+        .dark-mode .menu li a {
+            background-color: #444444;
+        }
+
+        .dark-mode-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            background-color: #4CAF50; 
+            color: white; 
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            font-size: 16px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .dark-mode-button:hover {
+            background-color: #45a049; 
+        }
+
+        .dark-mode .dark-mode-button {
+            background-color: #444444; 
+        }
+
+        .dark-mode .dark-mode-button:hover {
+            background-color: #555555; 
+        }
+    </style>
+</body>
+</html>
